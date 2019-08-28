@@ -9,7 +9,7 @@ function Header() {
           <Link to="/">Home page pública</Link>
         </li>
         <li>
-          <Link to="/logged">Página com role requerida</Link>
+          <Link to="/logged">Página com login requerido</Link>
         </li>
         <li>
           <Link to="/role-access">Página com role requerida</Link>
