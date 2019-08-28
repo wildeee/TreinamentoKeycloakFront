@@ -2,9 +2,10 @@ import React from 'react';
 import keycloak from '../services/KeycloakService';
 
 class LoggedComponent extends React.Component {
-  componentWillMount() {
-    if (keycloak.authenticated) return;
-    keycloak.login();
+  componentDidMount() {
+    if (!keycloak.authenticated) {
+      keycloak.login();
+    }
   }
 
   render() {
