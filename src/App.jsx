@@ -15,7 +15,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    keycloak.init().success(() => {
+    keycloak.init({ onLoad: 'check-sso' }).success(() => {
       this.setState({ initialized: true });
     }).error((err) => {
       console.error('Erro ao inicializar o keycloak');

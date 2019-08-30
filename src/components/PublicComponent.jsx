@@ -3,7 +3,7 @@ import React from 'react';
 function PublicComponent() {
   return (
     <div>
-      Essa página aparecerá para todos
+      Essa página aparece para todos pois é pública.
     </div>
   );
 }
